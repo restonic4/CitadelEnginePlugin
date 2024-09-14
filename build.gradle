@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '1.14.1'
+}
+
+group = "${group}"
+version = "${version}"
+
+repositories {
+    mavenCentral()
+}
+
+intellij {
+    version = '2023.2'
+    type = 'IC' // IntelliJ IDEA Community Edition
+    plugins = ['com.intellij.java']
+}
+
+patchPluginXml {
+    sinceBuild = '231'
+    untilBuild = '239.*'
+}
+
+dependencies {
+
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}

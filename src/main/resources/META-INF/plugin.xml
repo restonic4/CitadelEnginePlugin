@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>me.restonic4.Main</id>
+    <name>Citadel engine helper</name>
+    <description>A plugin that provides custom features working with Citadel engine.</description>
+    <version>0.1</version>
+    <vendor>restonic4</vendor>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="JAVA" implementationClass="me.restonic4.NotRecommendedAnnotator"/>
+    </extensions>
+
+    <application-components>
+        <!-- Define application components here if needed -->
+    </application-components>
+
+    <project-components>
+        <!-- Define project components here if needed -->
+    </project-components>
+</idea-plugin>
